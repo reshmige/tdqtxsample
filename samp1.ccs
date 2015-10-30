@@ -1,0 +1,45 @@
+#include <stdio.h>
+struct userinfo
+{
+        char UserId[6];
+        char location[10];
+        char Passwd[6];
+};
+char QNAME[]="DEM1";
+void main()  {
+
+struct userinfo      *user;
+int i=0;
+
+     EXEC CICS GETMAIN
+            SET       (user)
+            LENGTH    (sizeof(struct userinfo));
+     strcpy(user->UserId,"abcd");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"US");
+     for(i=0;i<2;i++){
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
+
+     strcpy(user->UserId,"Name");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"US");
+
+     }
+     for(i=0;i<8;i++){
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
+
+     strcpy(user->UserId,"abcd");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"IND");
+}
+
+EXEC CICS RETURN;
+
+}
+
