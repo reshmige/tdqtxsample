@@ -1,7 +1,7 @@
 #include <stdio.h>
 struct userinfo         
 {
-        char UserId[6];
+        char UserId[10];
         char location[10];
         char Passwd[6];
 };
