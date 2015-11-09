@@ -22,7 +22,7 @@ int i=0;
                 FROM       (user)
                 LENGTH     (sizeof(struct userinfo));
 
-     strcpy(user->UserId,"Catherine");
+     strcpy(user->UserId,"Martin");
      strcpy(user->Passwd,"1234");
      strcpy(user->location,"US");
 
@@ -31,7 +31,7 @@ int i=0;
                 FROM       (user)
                 LENGTH     (sizeof(struct userinfo));
 
-     strcpy(user->UserId,"Matt");
+     strcpy(user->UserId,"Emma");
      strcpy(user->Passwd,"1234");
      strcpy(user->location,"US");
       EXEC CICS WRITEQ TD
@@ -39,15 +39,41 @@ int i=0;
                 FROM       (user)
                 LENGTH     (sizeof(struct userinfo));
 
-     strcpy(user->UserId,"Ram");
+     strcpy(user->UserId,"Racheal");
      strcpy(user->Passwd,"1234");
-     strcpy(user->location,"IND");
-
+     strcpy(user->location,"US");
       EXEC CICS WRITEQ TD
                 QUEUE      (QNAME)
                 FROM       (user)
                 LENGTH     (sizeof(struct userinfo));
-
+     strcpy(user->UserId,"Chandler");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"US");
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
+     strcpy(user->UserId,"Ross");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"US");
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
+     strcpy(user->UserId,"Monica");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"US");
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
+     strcpy(user->UserId,"Joey");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"US");
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
      strcpy(user->UserId,"Ravi");
      strcpy(user->Passwd,"1234");
      strcpy(user->location,"IND");
@@ -57,21 +83,44 @@ int i=0;
                 FROM       (user)
                 LENGTH     (sizeof(struct userinfo));
 
-     strcpy(user->UserId,"Kishor");
+     strcpy(user->UserId,"Mohan");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"IND");
+
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
+
+     strcpy(user->UserId,"Kasturi");
      strcpy(user->Passwd,"1234");
      strcpy(user->location,"IND");
       EXEC CICS WRITEQ TD
                 QUEUE      (QNAME)
                 FROM       (user)
                 LENGTH     (sizeof(struct userinfo));
-     strcpy(user->UserId,"Aravind");
+     strcpy(user->UserId,"Megha");
      strcpy(user->Passwd,"1234");
      strcpy(user->location,"IND");
       EXEC CICS WRITEQ TD
                 QUEUE      (QNAME)
                 FROM       (user)
                 LENGTH     (sizeof(struct userinfo));
-     strcpy(user->UserId,"Lavanya");
+     strcpy(user->UserId,"Anu");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"IND");
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
+     strcpy(user->UserId,"Reshmi");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"IND");
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
+     strcpy(user->UserId,"Hari");
      strcpy(user->Passwd,"1234");
      strcpy(user->location,"IND");
       EXEC CICS WRITEQ TD
@@ -79,6 +128,13 @@ int i=0;
                 FROM       (user)
                 LENGTH     (sizeof(struct userinfo));
 
+     strcpy(user->UserId,"Sid");
+     strcpy(user->Passwd,"1234");
+     strcpy(user->location,"IND");
+      EXEC CICS WRITEQ TD
+                QUEUE      (QNAME)
+                FROM       (user)
+                LENGTH     (sizeof(struct userinfo));
 EXEC CICS RETURN;
 
 }

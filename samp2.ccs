@@ -24,7 +24,7 @@ char country[]="US";
             QUEUE   (QNAME)
             INTO    (user)
             LENGTH  (&TDQLength);
-        fprintf(stderr,"%s is from  %s  \n",user ->UserId,user->location);
+        fprintf(stderr,"%s is  %s  \n",user ->UserId,user->location);
         if(!strncmp(user->location,country,2))
                 count++;
      }
