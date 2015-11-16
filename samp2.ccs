@@ -16,7 +16,7 @@ char country[]="US";
 
      EXEC CICS GETMAIN
             SET       (user)
-            LENGTH    (sizeof( struct userinfo));
+            LENGTH    (sizeof( struct  userinfo));
 
      for(i=0;i<10;i++){
 
