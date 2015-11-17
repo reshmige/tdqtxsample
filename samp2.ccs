@@ -12,7 +12,7 @@ struct userinfo      *user;
 cics_char_t buffer[80];
 cics_sshort_t        TDQLength=23;
 int i=0,count=0;
-char country[]="US";
+char country[]="IN";
 
      EXEC CICS GETMAIN
             SET       (user)
