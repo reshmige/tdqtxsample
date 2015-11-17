@@ -20,7 +20,7 @@ char country[]="US";
 
      for(i=0;i<10;i++){
 
-            EXEC CICS READQ TD
+            EXEC CICS READQ TD 
             QUEUE   (QNAME)
             INTO    (user)
             LENGTH  (&TDQLength);
