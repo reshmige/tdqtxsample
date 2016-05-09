@@ -29,7 +29,7 @@ char country[]="IN";
                 count++;
      }
      fprintf(stderr,"We have %d entries from %s\n",count,country);
-     EXEC CICS RETURN;
+     EXEC CICS RETURN;    
 
 }
 
