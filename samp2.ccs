@@ -18,7 +18,7 @@ char country[]="IN";
             SET       (user)
             LENGTH    (sizeof( struct  userinfo));
 
-     for(i=0;i<10;i++){
+     for(i=0;i<10;i++){  
 
             EXEC CICS READQ TD 
             QUEUE   (QNAME)
